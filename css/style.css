@@ -72,11 +72,17 @@
    box-shadow: 0px 0px 4px #00000052;
  }
 
+.item_img{
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
  .item.x2 {
    width: 300px;
  }
 
- .item img {
+ .item_img img {
    width: 100%;
  }
 
