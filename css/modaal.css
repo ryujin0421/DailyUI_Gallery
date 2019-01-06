@@ -3,6 +3,10 @@
 	by Humaan, for all humans.
 	http://humaan.com
  */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .modaal-noscroll {
 	overflow: hidden;
@@ -199,10 +203,6 @@
 	background: #afb7bc;
 	right: 10px;
 	top: 10px;
-}
-
-.modaal-content-container {
-	padding: 30px;
 }
 
 .modaal-confirm-wrap {
