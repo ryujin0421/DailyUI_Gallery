@@ -7,6 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
   <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/modaal.min.js"></script>
+  <link rel="stylesheet" href="css/modaal.css">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -40,6 +42,10 @@
       isFitWidth: true //親要素の幅に合わせてカラム数を自動調整
     });
 
+    //  モーダルウィンドウ
+    $(".modaal").modaal({
+      content_source: '#inline'
+    });
 
   });
 </script>
@@ -58,11 +64,11 @@
       </div>
 
       <svg id="svg" version="1.1">
-    <clipPath id="clipSvg">
-    <path id="clip" fill="#ffffff" d="M410.5,1224c532-158,408.7,41.5,835-241c332-220,270-844-105-923c-422.7-89-805-137-1057,290
-		C-67.9,606.4-43.5,1407,410.5,1224z"/>
-    </clipPath>
-</svg>
+        <clipPath id="clipSvg">
+          <path id="clip" fill="#ffffff" d="M410.5,1224c532-158,408.7,41.5,835-241c332-220,270-844-105-923c-422.7-89-805-137-1057,290
+		C-67.9,606.4-43.5,1407,410.5,1224z" />
+        </clipPath>
+      </svg>
     </div>
     <img src="./icon/logo.png" width="76">
     <h1>
@@ -72,48 +78,84 @@
 
   <div id="wrapper">
     <div id="container">
-      <div class="item"><img src="img/001.png" alt="">
-        <div class="text">
-          <h2>001</h2>
-          <p>title 1</p>
+      <a href="#inline1" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">
+        <div class="item"><img src="img/001.png" alt="">
+          <div class="text">
+            <h2>001</h2>
+            <p>title 1</p>
+          </div>
         </div>
+      </a>
+      <div id="inline1" style="display:none;">
+        <h2>001</h2>
+        <img src="img/001.png" alt="" width="100%">
       </div>
-      <div class="item x2"><img src="img/001.png" alt="">
-        <div class="text">
-          <h2>002</h2>
-          <p>title 2</p>
+      <a href="#inline2" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">
+        <div class="item x2"><img src="img/001.png" alt="">
+          <div class="text">
+            <h2>002</h2>
+            <p>title 2</p>
+          </div>
         </div>
+      </a>
+      <div id="inline2" style="display:none;">
+        <h2>002</h2>
+        <img src="img/001.png" alt="" width="100%">
       </div>
-      <div class="item"><img src="img/001.png" alt="">
-        <div class="text">
-          <h2>003</h2>
-          <p>title 3</p>
+      <a href="#inline3" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">
+        <div class="item"><img src="img/001.png" alt="">
+          <div class="text">
+            <h2>003</h2>
+            <p>title 3</p>
+          </div>
         </div>
+      </a>
+      <div id="inline3" style="display:none;">
+        <h2>003</h2>
+        <img src="img/001.png" alt="" width="100%">
       </div>
-      <div class="item x2"><img src="img/001.png" alt="">
-        <div class="text">
-          <h2>004</h2>
-          <p>title 4</p>
+      <a href="#inline4" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">
+        <div class="item x2"><img src="img/001.png" alt="">
+          <div class="text">
+            <h2>004</h2>
+            <p>title 4</p>
+          </div>
         </div>
+      </a>
+      <div id="inline4" style="display:none;">
+        <h2>004</h2>
+        <img src="img/001.png" alt="" width="100%">
       </div>
-      <div class="item"><img src="img/001.png" alt="">
-        <div class="text">
-          <h2>005</h2>
-          <p>title 5</p>
+      <a href="#inline5" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">
+        <div class="item"><img src="img/001.png" alt="">
+          <div class="text">
+            <h2>005</h2>
+            <p>title 5</p>
+          </div>
         </div>
+      </a>
+      <div id="inline5" style="display:none;">
+        <h2>005</h2>
+        <img src="img/001.png" alt="" width="100%">
       </div>
-      <div class="item x2"><img src="img/001.png" alt="">
-        <div class="text">
-          <h2>006</h2>
-          <p>title 6</p>
+      <a href="#inline6" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">
+        <div class="item x2"><img src="img/001.png" alt="">
+          <div class="text">
+            <h2>006</h2>
+            <p>title 6</p>
+          </div>
         </div>
+      </a>
+      <div id="inline6" style="display:none;">
+        <h2>006</h2>
+        <img src="img/001.png" alt="" width="100%">
       </div>
     </div>
   </div>
 
   <script>
     var $svg = Snap('#svg path');
-    var path = 　 [
+    var path = [
       'M94.8,872.9c157.3,194.2,487.2,159.4,681.5,2.1c194.3-157.3,263.4-448.3-48.1-747.7c-311.4-299.4-192.5,11.2-477,99.2C-33.2,314.6-62.5,678.7,94.8,872.9z', //パスその１
       'M209.3,1028.8c488-236,619,164,856-150c150.6-199.5,182.4-409.6-129-709c-311.4-299.4-634-147-761,30C1.7,441.8-125.7,1148.8,209.3,1028.8z' //パスその2
     ];
