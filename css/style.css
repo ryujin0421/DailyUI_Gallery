@@ -72,18 +72,23 @@
    box-shadow: 0px 0px 4px #00000052;
  }
 
-.item_img{
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-}
+ .item_img {
+   width: 300px;
+   height: 200px;
+   position: relative;
+   overflow: hidden;
+ }
 
  .item.x2 {
    width: 300px;
  }
 
  .item_img img {
-   width: 100%;
+   width: 120%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
  }
 
  .text {
