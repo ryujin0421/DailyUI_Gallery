@@ -17,8 +17,8 @@
  .gnyognyo {
    position: absolute;
    z-index: -10;
-   top: -60%;
-   left: 45%;
+   top: -20%;
+   left: 60%;
  }
 
  #svgMask {
@@ -34,8 +34,15 @@
    width: 20%;
  }
 
+ #slide {
+   position: relative;
+ }
+
  #svgMask img {
-   transform: translate(-14%, 50%);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-25%, 0%);
  }
 
  header img {
