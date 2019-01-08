@@ -123,6 +123,10 @@
    position: relative;
  }
 
+.modaal-content-container img{
+  vertical-align: bottom;
+}
+
  .item {
    margin: 10px;
    width: 300px;
