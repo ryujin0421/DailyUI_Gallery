@@ -35,7 +35,7 @@
  }
 
  header {
-   width: 1220px;
+   width: 80%;
    margin: auto;
    font-family: brandon-gothic;
    position: relative;
@@ -123,10 +123,6 @@
    position: relative;
  }
 
-.modaal-content-container img{
-  vertical-align: bottom;
-}
-
  .item {
    margin: 10px;
    width: 300px;
@@ -170,7 +166,7 @@
    font-size: 18px;
  }
 
- @media screen and (max-width: 768px) {
+ @media screen and (min-width: 375px) and (max-width: 768px){
 
    main {
      max-width: 768px;
