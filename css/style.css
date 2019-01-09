@@ -8,6 +8,121 @@
    padding: 0;
  }
 
+ /*ローディング*/
+
+ #loader-bg {
+   width: 100%;
+   height: 100%;
+   background: #1E6CFB;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 20000;
+   font-family: 'brandon-gothic';
+ }
+
+ div#loadingAnimation {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
+
+ .ltr {
+   color: white;
+ }
+
+ span:nth-child(1) {
+   -webkit-animation-delay: 100ms;
+   animation-delay: 100ms;
+ }
+
+ span:nth-child(2) {
+   -webkit-animation-delay: 200ms;
+   animation-delay: 200ms;
+ }
+
+ span:nth-child(3) {
+   -webkit-animation-delay: 300ms;
+   animation-delay: 300ms;
+ }
+
+ span:nth-child(4) {
+   -webkit-animation-delay: 400ms;
+   animation-delay: 400ms;
+ }
+
+ span:nth-child(5) {
+   -webkit-animation-delay: 500ms;
+   animation-delay: 500ms;
+ }
+
+ span:nth-child(6) {
+   -webkit-animation-delay: 600ms;
+   animation-delay: 600ms;
+ }
+
+ span:nth-child(7) {
+   -webkit-animation-delay: 700ms;
+   animation-delay: 700ms;
+ }
+
+ .blink {
+   animation-name: blinker;
+   animation-duration: 1.75s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   -webkit-animation-name: blinker;
+   -webkit-animation-duration: 1.75s;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+ }
+
+ @-moz-keyframes blinker {
+   0% {
+     opacity: 1.0;
+   }
+   50% {
+     opacity: 0.0;
+   }
+   100% {
+     opacity: 1.0;
+   }
+ }
+
+ @-webkit-keyframes blinker {
+   0% {
+     opacity: 1.0;
+   }
+   50% {
+     opacity: 0.0;
+   }
+   100% {
+     opacity: 1.0;
+   }
+ }
+
+ @keyframes blinker {
+   0% {
+     opacity: 1.0;
+   }
+   50% {
+     opacity: 0.0;
+   }
+   100% {
+     opacity: 1.0;
+   }
+ }
+
+ .delayed span.blink {
+   -webkit-animation-duration: .8s;
+   animation-duration: .8s;
+ }
+
  body {
    background-color: #1E6CFB;
  }
@@ -166,7 +281,7 @@
    font-size: 18px;
  }
 
- @media screen and (min-width: 375px) and (max-width: 768px){
+ @media screen and (min-width: 375px) and (max-width: 768px) {
 
    main {
      max-width: 768px;
