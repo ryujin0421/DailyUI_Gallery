@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="Daily_UI_Gallery_beta" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="ページの簡単な説明" />
+  <meta property="og:url" content="https://ryujin0421.github.io/DailyUI_Gallery/" />
+  <meta property="og:site_name" content="Daily_UI_Gallery_beta" />
+  <meta property="og:image" content="icon/thumbnail.png" />
   <title>Daily_UI_Gallery_beta</title>
+  <link rel="shortcut icon" href="icon/favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -14,10 +21,10 @@
   <link rel="stylesheet" href="css/modaal.css">
 </head>
 <script>
-  $(window).load(function(){
-	$('#loader-bg').fadeOut();	
-});
-  
+  $(window).load(function() {
+    $('#loader-bg').fadeOut();
+  });
+
   $(function() {
     // 設定
     var $interval = 5000; // 切り替わりの間隔（ミリ秒）
@@ -59,7 +66,7 @@
 <body>
   <div id="loader-bg">
     <div id="loadingAnimation" class="delayed">
-     <img src="icon/logo_white.png" alt="">
+      <img src="icon/logo_white.png" alt="">
       <span class="ltr blink">L</span>
       <span class="ltr blink">o</span>
       <span class="ltr blink">a</span>
@@ -84,13 +91,13 @@
         </div>
 
         <svg id="svg" version="1.1">
-        <clipPath id="clipSvg">
-          <path id="clip" fill="#ffffff" d="M781,390.6c1.3,53.1-22.4,114.6-56.5,162.5c-33.9,49.1-78.1,84.7-112,113.6c-36.7,28.9-63.2,51-95.8,73.2c-32.4,21-70.9,42-126.2,41.2c-53.1,1.3-114.6-22.4-162.5-56.5c-49.1-33.9-84.7-78.1-113.6-112c-28.9-36.7-51-63.2-73.2-95.8
+          <clipPath id="clipSvg">
+            <path id="clip" fill="#ffffff" d="M781,390.6c1.3,53.1-22.4,114.6-56.5,162.5c-33.9,49.1-78.1,84.7-112,113.6c-36.7,28.9-63.2,51-95.8,73.2c-32.4,21-70.9,42-126.2,41.2c-53.1,1.3-114.6-22.4-162.5-56.5c-49.1-33.9-84.7-78.1-113.6-112c-28.9-36.7-51-63.2-73.2-95.8
 	c-21-32.4-42-70.9-41.2-126.2C-1.3,337.4,22.5,276,56.6,228c33.9-49.1,78.1-84.7,112-113.6c36.7-28.9,63.2-51,95.8-73.2
 	c32.4-21,70.9-42,126.2-41.2c53.1-1.3,114.6,22.4,162.5,56.5c49.1,33.9,84.7,78.1,113.6,112c28.9,36.7,51,63.2,73.2,95.8
 	C760.8,296.8,781.8,335.3,781,390.6z" />
-        </clipPath>
-      </svg>
+          </clipPath>
+        </svg>
       </div>
 
       <img class="logo" src="./icon/logo.png" width="76">
